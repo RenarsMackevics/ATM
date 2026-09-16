@@ -17,4 +17,9 @@ public class BankAccount {
         System.out.println("Your balance: " + balance);
     }
 
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+
 }
