@@ -25,18 +25,19 @@ public class Main {
             switch (choice){
                 case 1:
                     System.out.print("Your balance: ");
-
-
-
+                    acc.displayBalance();
                     break;
 
                 case 2:
                     System.out.print("Enter amount to deposit: ");
-
+                    double amount = sc.nextDouble();
+                    acc.deposit(amount);
                     break;
 
                 case 3:
                     System.out.print("Enter amount to withdraw: ");
+                    double amount2 = sc.nextDouble();
+                    acc.withdraw(amount2);
 
                     break;
 
