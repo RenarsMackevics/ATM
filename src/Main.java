@@ -45,6 +45,8 @@ public class Main {
                     double amount = sc.nextDouble();
                     acc.deposit(amount);
 
+                    System.out.println("Your transaction has been successfully deposited.");
+
 
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
@@ -66,6 +68,8 @@ public class Main {
                     }
 
                     acc.withdraw(amount2);
+
+                    System.out.println("You have withdrawn" + amount2 + " ");
 
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
