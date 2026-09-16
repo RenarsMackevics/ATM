@@ -10,7 +10,6 @@ public class Main {
 
 
 
-
         BankAccount acc = new BankAccount(500.00);
 
         boolean running = true;
