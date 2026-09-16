@@ -9,7 +9,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        BankAccount acc = new BankAccount(500.100);
+        BankAccount acc = new BankAccount(500.00);
 
         boolean running = true;
 
