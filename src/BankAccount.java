@@ -13,4 +13,8 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    public void displayBalance() {
+        System.out.println("Your balance: " + balance);
+    }
+
 }

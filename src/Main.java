@@ -8,6 +8,8 @@ public class Main {
 
         Scanner sc  = new Scanner(System.in);
 
+        BankAccount acc = new BankAccount(500.00);
+
         boolean running = true;
 
         while(running){
@@ -23,6 +25,8 @@ public class Main {
             switch (choice){
                 case 1:
                     System.out.print("Your balance: ");
+
+
 
                     break;
 
