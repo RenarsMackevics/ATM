@@ -34,7 +34,7 @@ public class Main {
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
                     if(sc.nextLine().equals("y")){
-                        return;
+                        continue;
                     }
                     else {
                         break;
@@ -49,7 +49,7 @@ public class Main {
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
                     if(sc.nextLine().equals("y")){
-                        return;
+                        continue;
 
                     }
                     else {
@@ -62,19 +62,17 @@ public class Main {
                     acc.withdraw(amount2);
                     if(acc.getBalance() < amount2){
                         System.out.println("Insufficient funds.");
-                        return;
+                        continue;
                     }
 
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
                     if(sc.nextLine().equals("y")){
-                        return;
+                        continue;
                     }
                     else {
                         break;
                     }
-
-
 
                 case 4:
 
