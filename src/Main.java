@@ -60,6 +60,11 @@ public class Main {
                     System.out.print("Enter amount to withdraw: ");
                     double amount2 = sc.nextDouble();
                     acc.withdraw(amount2);
+                    if(acc.getBalance() < amount2){
+                        System.out.println("Insufficient funds.");
+                        return;
+                    }
+
                     System.out.print("Do you want to make another transaction? (y/n)");
                     sc.nextLine();
                     if(sc.nextLine().equals("y")){
