@@ -8,6 +8,9 @@ public class Main {
 
         Scanner sc  = new Scanner(System.in);
 
+
+
+
         BankAccount acc = new BankAccount(500.00);
 
         boolean running = true;
@@ -26,20 +29,47 @@ public class Main {
                 case 1:
                     System.out.print("Your balance: ");
                     acc.displayBalance();
-                    break;
+
+
+                    System.out.print("Do you want to make another transaction? (y/n)");
+                    sc.nextLine();
+                    if(sc.nextLine().equals("y")){
+                        return;
+                    }
+                    else {
+                        break;
+                    }
 
                 case 2:
                     System.out.print("Enter amount to deposit: ");
                     double amount = sc.nextDouble();
                     acc.deposit(amount);
-                    break;
+
+
+                    System.out.print("Do you want to make another transaction? (y/n)");
+                    sc.nextLine();
+                    if(sc.nextLine().equals("y")){
+                        return;
+
+                    }
+                    else {
+                        break;
+                    }
 
                 case 3:
                     System.out.print("Enter amount to withdraw: ");
                     double amount2 = sc.nextDouble();
                     acc.withdraw(amount2);
+                    System.out.print("Do you want to make another transaction? (y/n)");
+                    sc.nextLine();
+                    if(sc.nextLine().equals("y")){
+                        return;
+                    }
+                    else {
+                        break;
+                    }
 
-                    break;
+
 
                 case 4:
 
