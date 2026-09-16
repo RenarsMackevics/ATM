@@ -24,11 +24,17 @@ public class Main {
                 case 1:
                     System.out.print("Your balance: ");
 
+                    break;
+
                 case 2:
                     System.out.print("Enter amount to deposit: ");
 
+                    break;
+
                 case 3:
                     System.out.print("Enter amount to withdraw: ");
+
+                    break;
 
                 case 4:
 
